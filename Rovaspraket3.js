@@ -1,5 +1,5 @@
 // This program double each consonant in an input string and insert a 'o in between each
-// consonant. It's called Rövarspråket.
+// Consonant, It's called Rövarspråket.
 
 function isConsonant(char){
     var vowels=['a','e','i','o','u','y','ä','å','ö','A','E','I','O','U','Y','Ä','Å','Ö',' '];
