@@ -33,7 +33,10 @@ for(var i=0; i<input.length;i++ ){
 
     if(!isVowel(c)) {
         output += c + 'o' + c;
+    }else if(isVowel(c)){
+        output += c;
     }else{
+        
         output += c;
     }
         
@@ -42,4 +45,29 @@ for(var i=0; i<input.length;i++ ){
 return output;
 }
 
+
+function decrypt(){
+    var input="Itot isos a lolotot ofof fofunon toto lolearornon JoJavovaSoScocroripoptot";
+    var output="";
+    
+    var i=0;
+    while(i<input.length){
+        c = input[i];
+        
+        if(isConsonant(c)){
+            output += c;
+            i+=3;
+            
+        }else if(!isConsonant(c)){
+            output += c;
+            i++;
+        }
+        
+    }
+
+    
+    return output;
+}
+
 console.log(translate());
+console.log(decrypt());
